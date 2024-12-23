@@ -5,7 +5,7 @@ class CreateCafes < ActiveRecord::Migration[8.0]
       t.string :address
       t.string :picture
       t.jsonb :hours
-      t.string :criteria
+      t.string :criteria, array: true
 
       t.timestamps
     end
